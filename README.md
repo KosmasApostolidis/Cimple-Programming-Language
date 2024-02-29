@@ -47,4 +47,11 @@ program <identifier>
 - Used for assigning the value of a variable, constant, or expression to a variable.
 
 # Conditional `if`
-
+- Syntax:
+```
+if (condition)
+    statements1
+[else
+    statements2]
+```
+- Executes `statements1` if `condition` is **true**; otherwise, `statements2` is executed if specified.
