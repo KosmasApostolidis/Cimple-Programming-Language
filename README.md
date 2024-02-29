@@ -85,3 +85,27 @@ forcase
     default statements2
 ```
 - Similar to `switchcase`, but returns to the start of `forcase` after executing `statements1`.
+
+# Repetition incase
+- Syntax:
+```
+incase
+    (case (condition) statements1)
+    *
+```
+- Checks each `condition` in sequence, executing corresponding `statements1` for each true condition.
+
+# Function Return Value
+- Syntax `return (expression)
+- Returns the result of evaluating `expression` within a function.
+
+# Output Data
+- Syntax: `print (expression)
+- Displays the result of `expression` evaluation.
+
+# Input Data
+- Syntax: `input (ID)`
+- Requests a value from the user to be stored in the variable `ID`.
+
+
+
