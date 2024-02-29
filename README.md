@@ -15,10 +15,10 @@ Cimple is a small, educational programming language designed to introduce progra
 - Cimple files use the **.ci** extension.
 
 
-program <identifier>
-<declarations>
-<subprograms>
-<statements>
+program identifier
+declarations
+subprograms
+statements
 .
 
 
