@@ -23,14 +23,4 @@ program <identifier>
 <declarations>
 <subprograms>
 <statements>
-.
-
-
-
-
-
-
-
-
-
-
+.```
