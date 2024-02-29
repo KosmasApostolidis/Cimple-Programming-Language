@@ -146,5 +146,133 @@ Cimple supports two modes of parameter passing:
 - **By Reference**: Specified with the keyword `inout`. Any changes made to the parameter are reflected in the calling program.
 Parameters are prefixed with `in` or `inout` in function calls, indicating whether they are passed by value or by reference, respectively.
 
+# Variable Scope and Functionality in Cimple
+- **Global Variables**: Declared in the main program and accessible everywhere within the program.
+- **Local Variables**: Declared within a function or procedure and accessible only within that specific context.
+- **Scope Overriding**: Cimple follows the common scoping rule where local variables and parameters overshadow those declared at a higher nesting level, which in turn overshadow global variables.
+- **Function and Procedure Calls**: Functions and procedures can recursively call themselves and any function or procedure declared at the same nesting level that precedes them in the code.
 
+```php
+// Cimple Grammar Specification
 
+// "program" is the starting symbol
+program : program ID block .
+
+// A block with declarations, subprograms, and statements
+block : declarations subprograms statements
+
+// Declaration of variables, zero or more "declare" allowed
+declarations : ( declare varlist ; )*
+
+// A list of variables following the declaration keyword
+varlist : ID ( , ID )*
+
+// Zero or more subprograms allowed
+subprograms : ( subprogram )*
+
+// A subprogram is a function or a procedure,
+// followed by parameters and block
+subprogram : function ID ( formalparlist ) block
+            | procedure ID ( formalparlist ) block
+
+// List of formal parameters
+formalparlist : formalparitem ( , formalparitem )*
+
+// A formal parameter ("in": by value, "inout" by reference)
+formalparitem : in ID
+              | inout ID
+
+// One or more statements
+statements : statement ;
+           | { statement ( ; statement )* }
+
+// One statement
+statement : assignStat
+          | ifStat
+          | whileStat
+          | switchcaseStat
+          | forcaseStat
+          | incaseStat
+          | callStat
+          | returnStat
+          | inputStat
+          | printStat
+
+// Assignment statement
+assignStat : ID := expression
+
+// If statement
+ifStat : if ( condition ) statements elsepart
+elsepart : else statements
+         | ε
+
+// While statement
+whileStat : while ( condition ) statements
+
+// Switch statement
+switchcaseStat: switchcase ( case ( condition ) statements )*
+               default statements
+
+// Forcase statement
+forcaseStat : forcase ( case ( condition ) statements )*
+             default statements
+
+// Incase statement
+incaseStat : incase ( case ( condition ) statements )*
+
+// Return statement
+returnStat : return( expression )
+
+// Call statement
+callStat : call ID( actualparlist )
+
+// Print statement
+printStat : print( expression )
+
+// Input statement
+inputStat : input( ID )
+
+// List of actual parameters
+actualparlist : actualparitem ( , actualparitem )*
+
+// An actual parameter ("in": by value, "inout" by reference)
+actualparitem : in expression
+              | inout ID
+
+// Boolean expression
+condition : boolterm ( or boolterm )*
+
+// Term in boolean expression
+boolterm : boolfactor ( and boolfactor )*
+
+// Factor in boolean expression
+boolfactor : not [ condition ]
+           | [ condition ]
+           | expression REL_OP expression
+
+// Arithmetic expression
+expression : optionalSign term ( ADD_OP term )*
+
+// Term in arithmetic expression
+term : factor ( MUL_OP factor )*
+
+// Factor in arithmetic expression
+factor : INTEGER
+       | ( expression )
+       | ID idtail
+
+// Follows a function of procedure (parentheses and parameters)
+idtail : ( actualparlist )
+       | ε
+
+// Symbols "+" and "-" (are optional)
+optionalSign : ADD_OP
+             | ε
+
+// Lexer rules: relational, arithmetic operations, integers, and ids
+REL_OP : = | <= | >= | > | < | <>
+ADD_OP : + | -
+MUL_OP : * | /
+INTEGER : [0-9]+
+ID : [a-zA-Z][a-zA-Z0-9]*
+```
