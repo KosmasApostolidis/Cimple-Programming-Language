@@ -35,4 +35,9 @@ Cimple supports a single data type: integer numbers. Variables are declared usin
 # Operators and Expressions in Cimple
 Cimple defines a hierarchy of operators from highest to lowest precedence as follows:
 
-- Multiplicative Operators: ** * **, **/**
+- **Multiplicative Operators**: `*`, `/`
+- **Additive Operators**: `+`, `-`
+- **Relational Operators**: `=`, `<`, `>`, `<>`, `<=`, `>=`
+- **Logical Operators**: `not`
+- **Logical AND**: `and`
+- **Logical OR**: `or`
