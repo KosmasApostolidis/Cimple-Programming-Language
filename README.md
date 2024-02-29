@@ -20,6 +20,7 @@ Every Cimple program starts with the keyword **program**, followed by an identif
 - **Declarations**: This block contains the variable declarations.
 - **Subprograms**: Functions and procedures that can be nested within each other.
 - **Statements**: The main program commands.
+
 The structure of a Cimple program is outlined below, noting the period at the end of the program:
 ```php
 program <identifier>
