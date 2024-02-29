@@ -102,8 +102,8 @@ Syntax: `print (expression)`
 Displays the result of `expression` evaluation.
 
 # Input Data
-- Syntax: `input (ID)`
-- Requests a value from the user to be stored in the variable `ID`.
+Syntax: `input (ID)`
+Requests a value from the user to be stored in the variable `ID`.
 
 # Procedure Calls in Cimple
 Syntax for calling a procedure: `call functionName(actualParameters)`
