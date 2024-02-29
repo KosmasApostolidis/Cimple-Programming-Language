@@ -6,8 +6,8 @@ Cimple is a small, educational programming language designed to introduce progra
 
 ## Features
 - **Syntax and Structure**: Resembles **C**, offering a familiar ground with simpler constructs.
-- **Educational Focus**: Ideal for teaching basic programming concepts such as loops (while, forcase, incase), conditional statements (if-else), and functions.
-- **Unique Elements**: Introduces original constructs like forcase and incase for educational exploration.
+- **Educational Focus**: Ideal for teaching basic programming concepts such as loops (`while`, `forcase`, `incase`), conditional statements (`if-else`), and functions.
+- **Unique Elements**: Introduces original constructs like `forcase` and `incase` for educational exploration.
 - **Functionality**: Supports functions, procedures, parameter passing by reference and value, and recursive calls.
 - **Limitations**: Excludes complex data types and structures like real numbers, strings, and arrays for simplicity.
 
@@ -15,7 +15,7 @@ Cimple is a small, educational programming language designed to introduce progra
 - Cimple files use the **.ci** extension.
 
 # Types and Variable Declarations in Cimple
-Cimple supports a single data type: integer numbers. Variables are declared using the **declare** command followed by the identifiers' names, separated by commas. Since all variables in Cimple are integers, no type specification is required. Declarations end with a Greek question mark. Multiple **declare** statements can be used consecutively for declaring different variables.
+Cimple supports a single data type: integer numbers. Variables are declared using the `declare` command followed by the identifiers' names, separated by commas. Since all variables in Cimple are integers, no type specification is required. Declarations end with a Greek question mark. Multiple `declare` statements can be used consecutively for declaring different variables.
 
 # Operators and Expressions in Cimple
 Cimple defines a hierarchy of operators from highest to lowest precedence as follows:
