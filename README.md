@@ -152,9 +152,9 @@ Parameters are prefixed with `in` or `inout` in function calls, indicating wheth
 - **Scope Overriding**: Cimple follows the common scoping rule where local variables and parameters overshadow those declared at a higher nesting level, which in turn overshadow global variables.
 - **Function and Procedure Calls**: Functions and procedures can recursively call themselves and any function or procedure declared at the same nesting level that precedes them in the code.
 
-```php
-// Cimple Grammar Specification
+# Cimple Grammar Specification
 
+```php
 // "program" is the starting symbol
 program : program ID block .
 
