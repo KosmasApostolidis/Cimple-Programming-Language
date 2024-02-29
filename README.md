@@ -22,10 +22,9 @@ Every Cimple program starts with the keyword **program**, followed by an identif
 - **Statements**: The main program commands.
 
 The structure of a Cimple program is outlined below, noting the period at the end of the program:
-```php
-program <identifier>
+
+> program <identifier>
 <declarations>
 <subprograms>
 <statements>
 .
-```
