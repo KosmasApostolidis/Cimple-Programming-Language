@@ -138,3 +138,13 @@ procedure ID (formalPars)
 ```
 - Procedures are called using the `call` keyword, e.g., `call f(inout x)`, where `f` is the procedure and `x` is the parameter passed by reference.
 - `formalPars` represents the list of formal parameters. Both functions and procedures can be nested within each other, and scope rules follow those of PASCAL.
+
+# Parameter Passing in Cimple
+Cimple supports two modes of parameter passing:
+
+- **By Value**: Specified with the keyword `in`. Changes made to the parameter within the function do not affect the variable in the calling program.
+- **By Reference**: Specified with the keyword `inout`. Any changes made to the parameter are reflected in the calling program.
+Parameters are prefixed with `in` or `inout` in function calls, indicating whether they are passed by value or by reference, respectively.
+
+
+
