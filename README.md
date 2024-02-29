@@ -24,7 +24,7 @@ Cimple defines a hierarchy of operators from highest to lowest precedence as fol
 - **Logical AND**: `and`
 - **Logical OR**: `or`
 
-## Cimple Program Structure
+# Cimple Program Structure
 
 Every Cimple program starts with the keyword **program**, followed by an identifier (name) for the program itself. After this introduction, a Cimple program is divided into three main blocks:
 - **Declarations**: This block contains the variable declarations.
