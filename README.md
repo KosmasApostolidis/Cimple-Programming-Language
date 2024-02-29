@@ -46,7 +46,7 @@ program <identifier>
 - Syntax: `ID := expression`
 - Used for assigning the value of a variable, constant, or expression to a variable.
 
-# Conditional `if`
+# Conditional if
 - Syntax:
 ```
 if (condition)
