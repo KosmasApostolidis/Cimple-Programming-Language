@@ -57,26 +57,26 @@ if (condition)
 Executes `statements1` if `condition` is `true`; otherwise, `statements2` is executed if specified.
 
 # Loop while
-Syntax:
+- Syntax:
 
 ```
 while (condition)
     statements
 ```
-Repeats `statements` as long as `condition` is `true`.
+- Repeats `statements` as long as `condition` is `true`.
 
 # Selection switchcase
-Syntax:
+- Syntax:
 ```
 switchcase
     (case (condition) statements1)
     *
     default statements2
 ```
-Executes `statements1` for the first true `condition`; if no conditions are true, `default` `statements2` are executed.
+- Executes `statements1` for the first true `condition`; if no conditions are true, `default` `statements2` are executed.
 
 # Repetition forcase
-Syntax:
+- Syntax:
 
 ```
 forcase
@@ -84,20 +84,20 @@ forcase
     *
     default statements2
 ```
-Similar to `switchcase`, but returns to the start of `forcase` after executing `statements1`.
+- Similar to `switchcase`, but returns to the start of `forcase` after executing `statements1`.
 
 # Repetition incase
-Syntax:
+- Syntax:
 ```
 incase
     (case (condition) statements1)
     *
 ```
-Checks each `condition` in sequence, executing corresponding `statements1` for each true condition.
+- Checks each `condition` in sequence, executing corresponding `statements1` for each true condition.
 
 # Function Return Value
-Syntax `return (expression)
-Returns the result of evaluating `expression` within a function.
+- Syntax `return (expression)`
+- Returns the result of evaluating `expression` within a function.
 
 # Output Data
 - Syntax: `print (expression)
