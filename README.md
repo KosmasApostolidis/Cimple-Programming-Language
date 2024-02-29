@@ -107,5 +107,34 @@ incase
 - Syntax: `input (ID)`
 - Requests a value from the user to be stored in the variable `ID`.
 
+# Procedure Calls in Cimple
+- Syntax for calling a procedure: `call functionName(actualParameters)`
+- Used to invoke a procedure within the program.
 
+# Functions and Procedures in Cimple
+- Cimple supports both functions and procedures with similar structures but distinct purposes.
+- **Functions** are defined for operations that return a value:
 
+```
+function ID (formalPars)
+{
+    declarations
+    subprograms
+    statements
+}
+```
+- Functions can be called within arithmetic expressions, e.g., `D = a + f(in x)`, where `f` is the function and `x` is the parameter passed by value.
+
+# **Procedures**
+- Defined for operations that do not return a value:
+
+```
+procedure ID (formalPars)
+{
+    declarations
+    subprograms
+    statements
+}
+```
+- Procedures are called using the `call` keyword, e.g., `call f(inout x)`, where `f` is the procedure and `x` is the parameter passed by reference.
+- `formalPars` represents the list of formal parameters. Both functions and procedures can be nested within each other, and scope rules follow those of PASCAL.
