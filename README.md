@@ -29,3 +29,5 @@ program <identifier>
 <subprograms>
 <statements>
 ```
+# Types and Variable Declarations in Cimple
+Cimple supports a single data type: integer numbers. Variables are declared using the **declare** command followed by the identifiers' names, separated by commas. Since all variables in Cimple are integers, no type specification is required. Declarations end with a Greek question mark. Multiple **declare** statements can be used consecutively for declaring different variables.
