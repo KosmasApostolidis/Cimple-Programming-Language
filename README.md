@@ -16,8 +16,11 @@ Cimple is a small, educational programming language designed to introduce progra
 
 ## Cimple Program Structure
 
-The basic structure of a Cimple program is outlined as follows:
-
+Every Cimple program starts with the keyword **program**, followed by an identifier (name) for the program itself. After this introduction, a Cimple program is divided into three main blocks:
+- **Declarations**: This block contains the variable declarations.
+- **Subprograms**: Functions and procedures that can be nested within each other.
+- **Statements**: The main program commands.
+The structure of a Cimple program is outlined below, noting the period at the end of the program:
 ```php
 program <identifier>
 <declarations>
