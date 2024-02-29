@@ -14,6 +14,19 @@ Cimple is a small, educational programming language designed to introduce progra
 ## Getting Started
 - Cimple files use the **.ci** extension.
 
+# Types and Variable Declarations in Cimple
+Cimple supports a single data type: integer numbers. Variables are declared using the **declare** command followed by the identifiers' names, separated by commas. Since all variables in Cimple are integers, no type specification is required. Declarations end with a Greek question mark. Multiple **declare** statements can be used consecutively for declaring different variables.
+
+# Operators and Expressions in Cimple
+Cimple defines a hierarchy of operators from highest to lowest precedence as follows:
+
+- **Multiplicative Operators**: `*`, `/`
+- **Additive Operators**: `+`, `-`
+- **Relational Operators**: `=`, `<`, `>`, `<>`, `<=`, `>=`
+- **Logical Operators**: `not`
+- **Logical AND**: `and`
+- **Logical OR**: `or`
+
 ## Cimple Program Structure
 
 Every Cimple program starts with the keyword **program**, followed by an identifier (name) for the program itself. After this introduction, a Cimple program is divided into three main blocks:
@@ -28,15 +41,3 @@ program <identifier>
 <subprograms> 
 <statements> 
 ```
-# Types and Variable Declarations in Cimple
-Cimple supports a single data type: integer numbers. Variables are declared using the **declare** command followed by the identifiers' names, separated by commas. Since all variables in Cimple are integers, no type specification is required. Declarations end with a Greek question mark. Multiple **declare** statements can be used consecutively for declaring different variables.
-
-# Operators and Expressions in Cimple
-Cimple defines a hierarchy of operators from highest to lowest precedence as follows:
-
-- **Multiplicative Operators**: `*`, `/`
-- **Additive Operators**: `+`, `-`
-- **Relational Operators**: `=`, `<`, `>`, `<>`, `<=`, `>=`
-- **Logical Operators**: `not`
-- **Logical AND**: `and`
-- **Logical OR**: `or`
