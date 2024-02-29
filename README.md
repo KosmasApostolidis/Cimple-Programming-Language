@@ -24,10 +24,10 @@ Every Cimple program starts with the keyword **program**, followed by an identif
 The structure of a Cimple program is outlined below, noting the period at the end of the program:
 
 `
-program <identifier>
-<declarations>
-<subprograms>
-<statements>
+program <identifier> \n
+<declarations> \n
+<subprograms> \n
+<statements> \n
 `
 # Types and Variable Declarations in Cimple
 Cimple supports a single data type: integer numbers. Variables are declared using the **declare** command followed by the identifiers' names, separated by commas. Since all variables in Cimple are integers, no type specification is required. Declarations end with a Greek question mark. Multiple **declare** statements can be used consecutively for declaring different variables.
