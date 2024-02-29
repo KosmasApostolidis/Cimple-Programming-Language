@@ -43,77 +43,75 @@ program <identifier>
 ```
 
 # Assignment
-- Syntax: `ID := expression`
-- Used for assigning the value of a variable, constant, or expression to a variable.
+Syntax: `ID := expression`
+Used for assigning the value of a variable, constant, or expression to a variable.
 
 # Conditional if
-- Syntax:
+Syntax:
 ```
 if (condition)
     statements1
 [else
     statements2]
 ```
-- Executes `statements1` if `condition` is `true`; otherwise, `statements2` is executed if specified.
+Executes `statements1` if `condition` is `true`; otherwise, `statements2` is executed if specified.
 
 # Loop while
-- Syntax:
-
+Syntax:
 ```
 while (condition)
     statements
 ```
-- Repeats `statements` as long as `condition` is `true`.
+Repeats `statements` as long as `condition` is `true`.
 
 # Selection switchcase
-- Syntax:
+Syntax:
 ```
 switchcase
     (case (condition) statements1)
     *
     default statements2
 ```
-- Executes `statements1` for the first true `condition`; if no conditions are true, `default` `statements2` are executed.
+Executes `statements1` for the first true `condition`; if no conditions are true, `default` `statements2` are executed.
 
 # Repetition forcase
-- Syntax:
-
+Syntax:
 ```
 forcase
     (case (condition) statements1)
     *
     default statements2
 ```
-- Similar to `switchcase`, but returns to the start of `forcase` after executing `statements1`.
+Similar to `switchcase`, but returns to the start of `forcase` after executing `statements1`.
 
 # Repetition incase
-- Syntax:
+Syntax:
 ```
 incase
     (case (condition) statements1)
     *
 ```
-- Checks each `condition` in sequence, executing corresponding `statements1` for each true condition.
+Checks each `condition` in sequence, executing corresponding `statements1` for each true condition.
 
 # Function Return Value
-- Syntax `return (expression)`
-- Returns the result of evaluating `expression` within a function.
+Syntax `return (expression)`
+Returns the result of evaluating `expression` within a function.
 
 # Output Data
-- Syntax: `print (expression)
-- Displays the result of `expression` evaluation.
+Syntax: `print (expression)`
+Displays the result of `expression` evaluation.
 
 # Input Data
 - Syntax: `input (ID)`
 - Requests a value from the user to be stored in the variable `ID`.
 
 # Procedure Calls in Cimple
-- Syntax for calling a procedure: `call functionName(actualParameters)`
-- Used to invoke a procedure within the program.
+Syntax for calling a procedure: `call functionName(actualParameters)`
+Used to invoke a procedure within the program.
 
 # Functions and Procedures in Cimple
-- Cimple supports both functions and procedures with similar structures but distinct purposes.
-- **Functions** are defined for operations that return a value:
+Cimple supports both functions and procedures with similar structures but distinct purposes.
+**Functions** are defined for operations that return a value:
 
 ```
 function ID (formalPars)
@@ -123,11 +121,10 @@ function ID (formalPars)
     statements
 }
 ```
-- Functions can be called within arithmetic expressions, e.g., `D = a + f(in x)`, where `f` is the function and `x` is the parameter passed by value.
+Functions can be called within arithmetic expressions, e.g., `D = a + f(in x)`, where `f` is the function and `x` is the parameter passed by value.
 
 # **Procedures**
-- Defined for operations that do not return a value:
-
+Defined for operations that do not return a value:
 ```
 procedure ID (formalPars)
 {
@@ -136,21 +133,21 @@ procedure ID (formalPars)
     statements
 }
 ```
-- Procedures are called using the `call` keyword, e.g., `call f(inout x)`, where `f` is the procedure and `x` is the parameter passed by reference.
-- `formalPars` represents the list of formal parameters. Both functions and procedures can be nested within each other, and scope rules follow those of PASCAL.
+Procedures are called using the `call` keyword, e.g., `call f(inout x)`, where `f` is the procedure and `x` is the parameter passed by reference.
+`formalPars` represents the list of formal parameters. Both functions and procedures can be nested within each other, and scope rules follow those of PASCAL.
 
 # Parameter Passing in Cimple
 Cimple supports two modes of parameter passing:
 
-- **By Value**: Specified with the keyword `in`. Changes made to the parameter within the function do not affect the variable in the calling program.
-- **By Reference**: Specified with the keyword `inout`. Any changes made to the parameter are reflected in the calling program.
+**By Value**: Specified with the keyword `in`. Changes made to the parameter within the function do not affect the variable in the calling program.
+**By Reference**: Specified with the keyword `inout`. Any changes made to the parameter are reflected in the calling program.
 Parameters are prefixed with `in` or `inout` in function calls, indicating whether they are passed by value or by reference, respectively.
 
 # Variable Scope and Functionality in Cimple
-- **Global Variables**: Declared in the main program and accessible everywhere within the program.
-- **Local Variables**: Declared within a function or procedure and accessible only within that specific context.
-- **Scope Overriding**: Cimple follows the common scoping rule where local variables and parameters overshadow those declared at a higher nesting level, which in turn overshadow global variables.
-- **Function and Procedure Calls**: Functions and procedures can recursively call themselves and any function or procedure declared at the same nesting level that precedes them in the code.
+**Global Variables**: Declared in the main program and accessible everywhere within the program.
+**Local Variables**: Declared within a function or procedure and accessible only within that specific context.
+**Scope Overriding**: Cimple follows the common scoping rule where local variables and parameters overshadow those declared at a higher nesting level, which in turn overshadow global variables.
+**Function and Procedure Calls**: Functions and procedures can recursively call themselves and any function or procedure declared at the same nesting level that precedes them in the code.
 
 # Cimple Grammar Specification
 
