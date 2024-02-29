@@ -14,11 +14,15 @@ Cimple is a small, educational programming language designed to introduce progra
 ## Getting Started
 - Cimple files use the **.ci** extension.
 
+## Cimple Program Structure
 
-program identifier
-declarations
-subprograms
-statements
+The basic structure of a Cimple program is outlined as follows:
+
+```php
+program <identifier>
+<declarations>
+<subprograms>
+<statements>
 .
 
 
