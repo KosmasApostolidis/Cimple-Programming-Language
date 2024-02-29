@@ -56,7 +56,7 @@ if (condition)
 ```
 - Executes `statements1` if `condition` is `true`; otherwise, `statements2` is executed if specified.
 
-# Loop `while`
+# Loop while
 - Syntax:
 
 ```
@@ -64,3 +64,24 @@ while (condition)
     statements
 ```
 - Repeats `statements` as long as `condition` is `true`.
+
+# Selection switchcase
+- Syntax:
+```
+switchcase
+    (case (condition) statements1)
+    *
+    default statements2
+```
+- Executes `statements1` for the first true `condition`; if no conditions are true, `default` `statements2` are executed.
+
+# Repetition forcase
+- Syntax:
+
+```
+forcase
+    (case (condition) statements1)
+    *
+    default statements2
+```
+- Similar to `switchcase`, but returns to the start of `forcase` after executing `statements1`.
