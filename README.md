@@ -54,4 +54,13 @@ if (condition)
 [else
     statements2]
 ```
-- Executes `statements1` if `condition` is **true**; otherwise, `statements2` is executed if specified.
+- Executes `statements1` if `condition` is `true`; otherwise, `statements2` is executed if specified.
+
+# Loop `while`
+- Syntax:
+
+```
+while (condition)
+    statements
+```
+- Repeats `statements` as long as `condition` is `true`.
