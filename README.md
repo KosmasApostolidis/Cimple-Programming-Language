@@ -21,15 +21,15 @@ Cimple is a small, educational programming language designed to introduce progra
   - The Symbol Table
   - The .asm file (Assembly)
 
-Execute
+## Compile ".ci" to all formats with default output filenames
 ```
-# Compile ".ci" to all formats with default output filenames
 python cimple.py "your_program.ci" --intermediate --c --asm --symbol-table -o custom_output
-```  
 ```
-# Compile to intermediate code only, with a specific output filename
+## Compile to intermediate code only, with a specific output filename
+```
 python cimple.py "your_program.ci" --intermediate -o custom_output
 ```
+## Generate C and assembly code with custom output filename
 ```
 # Generate C and assembly code with custom output filename
 python cimple.py "your_program.ci" --c --asm -o custom_output
