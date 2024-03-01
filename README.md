@@ -136,15 +136,15 @@ Procedures are called using the `call` keyword, e.g., `call f(inout x)`, where `
 # Parameter Passing in Cimple
 Cimple supports two modes of parameter passing:
 
-**By Value**: Specified with the keyword `in`. Changes made to the parameter within the function do not affect the variable in the calling program.
-**By Reference**: Specified with the keyword `inout`. Any changes made to the parameter are reflected in the calling program.
+1. **By Value**: Specified with the keyword `in`. Changes made to the parameter within the function do not affect the variable in the calling program.
+2. **By Reference**: Specified with the keyword `inout`. Any changes made to the parameter are reflected in the calling program.
 Parameters are prefixed with `in` or `inout` in function calls, indicating whether they are passed by value or by reference, respectively.
 
 # Variable Scope and Functionality in Cimple
-**Global Variables**: Declared in the main program and accessible everywhere within the program.
-**Local Variables**: Declared within a function or procedure and accessible only within that specific context.
-**Scope Overriding**: Cimple follows the common scoping rule where local variables and parameters overshadow those declared at a higher nesting level, which in turn overshadow global variables.
-**Function and Procedure Calls**: Functions and procedures can recursively call themselves and any function or procedure declared at the same nesting level that precedes them in the code.
+1. **Global Variables**: Declared in the main program and accessible everywhere within the program.
+2. **Local Variables**: Declared within a function or procedure and accessible only within that specific context.
+3. **Scope Overriding**: Cimple follows the common scoping rule where local variables and parameters overshadow those declared at a higher nesting level, which in turn overshadow global variables.
+4. **Function and Procedure Calls**: Functions and procedures can recursively call themselves and any function or procedure declared at the same nesting level that precedes them in the code.
 
 # Cimple Grammar Specification
 
