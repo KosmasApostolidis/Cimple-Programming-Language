@@ -10,6 +10,30 @@ Cimple is a small, educational programming language designed to introduce progra
 
 # Getting Started
 - Cimple files use the **.ci** extension.
+- Download python
+- The program runs from **command line (cmd)**.
+
+# How to Run
+- Go to the path that the **cimple.py** file exists.
+- Via **command line arguments** you have the option to generate:
+  - The Intermidiate code
+  - The .c file
+  - The Symbol Table
+  - The .asm file (Assembly)
+
+Execute
+```
+# Compile ".ci" to all formats with default output filenames
+python cimple.py "your_program.ci" --intermediate --c --asm --symbol-table -o custom_output
+```  
+```
+# Compile to intermediate code only, with a specific output filename
+python cimple.py "your_program.ci" --intermediate -o custom_output
+```
+```
+# Generate C and assembly code with custom output filename
+python cimple.py "your_program.ci" --c --asm -o custom_output
+``` 
 
 # Types and Variable Declarations in Cimple
 Cimple supports a single data type: integer numbers. Variables are declared using the `declare` command followed by the identifiers' names, separated by commas. Since all variables in Cimple are integers, no type specification is required. Declarations end with a Greek question mark. Multiple `declare` statements can be used consecutively for declaring different variables.
