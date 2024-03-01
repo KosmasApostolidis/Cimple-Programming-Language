@@ -1,18 +1,39 @@
 # Cimple-Programming-Language
-This repository is created for the Compilers Course (ΜΥΥ802) at the **Department of Computer Science and Engineering at the University of Ioannina (UOI)**
-
-## Overview
 Cimple is a small, educational programming language designed to introduce programming concepts with simplicity. Inspired by C, it focuses on fundamental programming structures and capabilities, tailored for educational purposes.
 
-## Features
+# Features
 - **Syntax and Structure**: Resembles **C**, offering a familiar ground with simpler constructs.
 - **Educational Focus**: Ideal for teaching basic programming concepts such as loops (`while`, `forcase`, `incase`), conditional statements (`if-else`), and functions.
 - **Unique Elements**: Introduces original constructs like `forcase` and `incase` for educational exploration.
 - **Functionality**: Supports functions, procedures, parameter passing by reference and value, and recursive calls.
 - **Limitations**: Excludes complex data types and structures like real numbers, strings, and arrays for simplicity.
 
-## Getting Started
+# Getting Started
 - Cimple files use the **.ci** extension.
+- Download python
+- The program runs from **command line (cmd)**.
+
+# How to Run
+- Go to the path that the **cimple.py** file exists.
+- Via **command line arguments** you have the option to generate:
+  - The Intermidiate code
+  - The .c file
+  - The Symbol Table
+  - The .asm file (Assembly)
+
+Execute
+```
+# Compile ".ci" to all formats with default output filenames
+python cimple.py "your_program.ci" --intermediate --c --asm --symbol-table -o custom_output
+```  
+```
+# Compile to intermediate code only, with a specific output filename
+python cimple.py "your_program.ci" --intermediate -o custom_output
+```
+```
+# Generate C and assembly code with custom output filename
+python cimple.py "your_program.ci" --c --asm -o custom_output
+``` 
 
 # Types and Variable Declarations in Cimple
 Cimple supports a single data type: integer numbers. Variables are declared using the `declare` command followed by the identifiers' names, separated by commas. Since all variables in Cimple are integers, no type specification is required. Declarations end with a Greek question mark. Multiple `declare` statements can be used consecutively for declaring different variables.
@@ -27,7 +48,7 @@ Cimple defines a hierarchy of operators from highest to lowest precedence as fol
 - **Logical AND**: `and`
 - **Logical OR**: `or`
 
-## Cimple Program Structure
+# Cimple Program Structure
 
 Every Cimple program starts with the keyword **program**, followed by an identifier (name) for the program itself. After this introduction, a Cimple program is divided into three main blocks:
 - **Declarations**: This block contains the variable declarations.
@@ -139,15 +160,15 @@ Procedures are called using the `call` keyword, e.g., `call f(inout x)`, where `
 # Parameter Passing in Cimple
 Cimple supports two modes of parameter passing:
 
-**By Value**: Specified with the keyword `in`. Changes made to the parameter within the function do not affect the variable in the calling program.
-**By Reference**: Specified with the keyword `inout`. Any changes made to the parameter are reflected in the calling program.
+1. **By Value**: Specified with the keyword `in`. Changes made to the parameter within the function do not affect the variable in the calling program.
+2. **By Reference**: Specified with the keyword `inout`. Any changes made to the parameter are reflected in the calling program.
 Parameters are prefixed with `in` or `inout` in function calls, indicating whether they are passed by value or by reference, respectively.
 
 # Variable Scope and Functionality in Cimple
-**Global Variables**: Declared in the main program and accessible everywhere within the program.
-**Local Variables**: Declared within a function or procedure and accessible only within that specific context.
-**Scope Overriding**: Cimple follows the common scoping rule where local variables and parameters overshadow those declared at a higher nesting level, which in turn overshadow global variables.
-**Function and Procedure Calls**: Functions and procedures can recursively call themselves and any function or procedure declared at the same nesting level that precedes them in the code.
+1. **Global Variables**: Declared in the main program and accessible everywhere within the program.
+2. **Local Variables**: Declared within a function or procedure and accessible only within that specific context.
+3. **Scope Overriding**: Cimple follows the common scoping rule where local variables and parameters overshadow those declared at a higher nesting level, which in turn overshadow global variables.
+4. **Function and Procedure Calls**: Functions and procedures can recursively call themselves and any function or procedure declared at the same nesting level that precedes them in the code.
 
 # Cimple Grammar Specification
 
