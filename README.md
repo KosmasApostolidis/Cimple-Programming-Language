@@ -31,7 +31,6 @@ python cimple.py "your_program.ci" --intermediate -o custom_output
 ```
 ## Generate C and assembly code with custom output filename
 ```
-# Generate C and assembly code with custom output filename
 python cimple.py "your_program.ci" --c --asm -o custom_output
 ``` 
 
